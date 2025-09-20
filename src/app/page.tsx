@@ -1,6 +1,5 @@
 import { MoodCheckIn } from '@/components/mood-check-in';
 import { TaskBreakdown } from '@/components/task-breakdown';
-import { CalmingExercises } from '@/components/calming-exercises';
 import { AffirmationsFeed } from '@/components/affirmations-feed';
 
 export default function Home() {
@@ -20,7 +19,6 @@ export default function Home() {
           <MoodCheckIn />
           <AffirmationsFeed />
           <TaskBreakdown />
-          <CalmingExercises />
         </div>
       </main>
       <footer className="text-center py-6 text-muted-foreground text-sm">
