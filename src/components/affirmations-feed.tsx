@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect } from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useEffect, useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import { Sparkles, Quote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -39,7 +39,7 @@ export function AffirmationsFeed() {
     error: undefined,
     formErrors: undefined,
   };
-  const [state, formAction] = useFormState(getAffirmationAction, initialState);
+  const [state, formAction] = useActionState(getAffirmationAction, initialState);
 
   useEffect(() => {
     if (state.error) {
